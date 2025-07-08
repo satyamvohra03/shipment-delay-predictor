@@ -39,3 +39,29 @@ Use this project to demonstrate understanding of:
 - Model building and evaluation
 - Practical ML in logistics/supply chain domain
 
+---
+
+✅ Final Model & Evaluation
+
+The final model used was a **Random Forest Classifier**, selected after hyperparameter tuning via **GridSearchCV** and evaluated using **3-fold cross-validation**.
+
+**Final Steps Completed:**
+- Label encoding of categorical hub feature  
+- Split data into training and test sets (80/20)  
+- Tuned `n_estimators`, `max_depth`, and `min_samples_split`  
+- Exported trained model as `shipment_delay_model.pkl`
+
+📊 **Evaluation Report:**
+
+| Metric     | Class 0 (On-Time) | Class 1 (Delayed) |
+|------------|------------------|-------------------|
+| Precision  | 0.89             | 0.85              |
+| Recall     | 0.93             | 0.79              |
+| F1-Score   | 0.91             | 0.82              |
+
+📌 Overall Accuracy: ~88%  
+📁 [View Final Notebook](https://github.com/satyamvohra03/shipment-delay-predictor/blob/main/day9_final_model_and_evaluation.ipynb)
+
+---
+
+
